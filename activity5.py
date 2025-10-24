@@ -6,7 +6,7 @@ def twenty_or_more(file):
         if len(x) > 21:
             x1 = x.replace("\n", "")
             data.append(x1)
-    print(data)
+    return data
 
 # twenty_or_more('CROSSWD.txt')
 
