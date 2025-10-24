@@ -1,15 +1,15 @@
 words_file = open('CROSSWD.txt', 'r')
 
 # # Function 1
-def twenty_or_more(file):
+def more_than_20(file):
     data = []
     for x in words_file:
-        if len(x) > 21:
+        if len(x) >= 22:
             x1 = x.replace("\n", "")
             data.append(x1)
     return data
 
-# print(twenty_or_more(words_file))
+print(more_than_20(words_file))
 
 
 # # Function 2
