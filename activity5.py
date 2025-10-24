@@ -1,7 +1,6 @@
-words_file = open('CROSSWD.txt', 'r')
-
 # # Function 1
 def more_than_20(file):
+    words_file = open(file, 'r')
     data = []
     for x in words_file:
         if len(x) >= 22:
@@ -9,7 +8,7 @@ def more_than_20(file):
             data.append(x1)
     return data
 
-print(more_than_20(words_file))
+# print(more_than_20('CROSSWD.txt'))
 
 
 # # Function 2
