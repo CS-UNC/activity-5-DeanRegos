@@ -8,7 +8,7 @@ def twenty_or_more(file):
             data.append(x1)
     print(data)
 
-twenty_or_more('CROSSWD.txt')
+# twenty_or_more('CROSSWD.txt')
 
 
 # # Function 2
