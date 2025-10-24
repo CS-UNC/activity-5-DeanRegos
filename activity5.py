@@ -32,11 +32,12 @@ def uses_only(word, letters):
 
 # # Function 4
 def all_uses_only(file, letters):
-    # all_words_file = open('CROSSWD.txt', 'r')
+    all_words_file = open(file, 'r')
     data1 = []
-    for word in file:
-        if uses_only(word, letters) == True:
-            data1.append(word)
-    print(data1)
+    for x in all_words_file:
+        x1 = x.replace("\n", "")
+        if uses_only(x1, letters) == True:
+            data1.append(x1)
+    return data1
 
-# all_uses_only('CROSSWD.txt', 'abrz')
+# print(all_uses_only('CROSSWD.txt', 'abrz'))
