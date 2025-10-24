@@ -1,6 +1,7 @@
+words_file = open('CROSSWD.txt', 'r')
+
 # # Function 1
 def twenty_or_more(file):
-    words_file = open('CROSSWD.txt', 'r')
     data = []
     for x in words_file:
         if len(x) > 21:
@@ -8,7 +9,7 @@ def twenty_or_more(file):
             data.append(x1)
     return data
 
-# twenty_or_more('CROSSWD.txt')
+# print(twenty_or_more(words_file))
 
 
 # # Function 2
@@ -32,11 +33,11 @@ def uses_only(word, letters):
 
 # # Function 4
 def all_uses_only(file, letters):
-    all_words_file = open('CROSSWD.txt', 'r')
+    # all_words_file = open('CROSSWD.txt', 'r')
     data1 = []
-    for x in all_words_file:
-        if uses_only(x, letters) == True:
-            data1.append(x)
+    for word in file:
+        if uses_only(word, letters) == True:
+            data1.append(word)
     print(data1)
 
-# all_uses_only('CROSSWD.txt', 'abcdefg')
+# all_uses_only('CROSSWD.txt', 'abrz')
