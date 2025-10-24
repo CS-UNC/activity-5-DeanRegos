@@ -4,10 +4,11 @@ def twenty_or_more(file):
     data = []
     for x in words_file:
         if len(x) > 21:
-            data.append(x)
+            x1 = x.replace("\n", "")
+            data.append(x1)
     print(data)
 
-# twenty_or_more('CROSSWD.txt')
+twenty_or_more('CROSSWD.txt')
 
 
 # # Function 2
@@ -38,4 +39,4 @@ def all_uses_only(file, letters):
             data1.append(x)
     print(data1)
 
-all_uses_only('CROSSWD.txt', 'abcdefg')
+# all_uses_only('CROSSWD.txt', 'abcdefg')
